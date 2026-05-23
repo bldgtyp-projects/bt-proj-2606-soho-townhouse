@@ -1,0 +1,30 @@
+schema_version: 0.2.0
+slug: project-2606
+project_title: SOHO Townhouse
+client_name: Yun Architecture
+building_name: SOHO Townhouse
+phase: Design Analysis
+report_date: '2026-05-23'
+prepared_by: bldgtyp, llc
+contact_email: ed@bldgtyp.com
+target_standard: TBD
+certification_program: TBD
+certification_path: TBD
+building:
+  address: TBD
+  city: TBD
+  state: TBD
+  climate_zone: TBD
+  building_type: TBD
+source_files:
+  phpp_path: ../07_PHPP/2606-29-Vandam-St-260522.xlsx
+  data_dir: data
+  assets_dir: public/assets
+publishing:
+  production_url: https://project-2606.bldgtyp.com
+  cloudflare_pages_project: bt-proj-2606-soho-townhouse
+narrative:
+  climate:
+    weather_station_name: TBD
+    state_name: TBD
+    ashrae_location_name: TBD
