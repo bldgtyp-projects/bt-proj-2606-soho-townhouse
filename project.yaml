@@ -1,30 +1,58 @@
-schema_version: 0.2.0
-slug: project-2606
-project_title: SOHO Townhouse
-client_name: Yun Architecture
-building_name: SOHO Townhouse
-phase: Design Analysis
-report_date: '2026-05-23'
-prepared_by: bldgtyp, llc
-contact_email: ed@bldgtyp.com
-target_standard: TBD
-certification_program: TBD
-certification_path: TBD
+schema_version: "0.2.0"
+slug: "project-2606"
+project_title: "SOHO Townhouse Design Phase Report"
+client_name: "Yun Architecture"
+building_name: "SOHO Townhouse"
+phase: "Design Analysis"
+report_date: "2026-05-22"
+prepared_by: "BLDGTYP"
+contact_email: "info@bldgtyp.com"
+target_standard: "Passive House"
+certification_program: "Design analysis only"
+certification_path: "Not submitted"
+recommended_variant_id: "enerphit_by_component"
 building:
-  address: TBD
-  city: TBD
-  state: TBD
-  climate_zone: TBD
-  building_type: TBD
+  address: "123 Example Street"
+  city: "Brooklyn"
+  state: "NY"
+  climate_zone: "ASHRAE 4A"
+  building_type: "single-family residential"
+  total_num_occupants: 4
 source_files:
-  phpp_path: ../07_PHPP/2606-29-Vandam-St-260522.xlsx
-  data_dir: data
-  assets_dir: public/assets
+  phpp_path: ""
+  cad_files_received_date: "May 1, 2026"
+  data_dir: "data"
+  assets_dir: "public/assets"
 publishing:
-  production_url: https://project-2606.bldgtyp.com
-  cloudflare_pages_project: bt-proj-2606-soho-townhouse
+  production_url: "https://project-2606.bldgtyp.com"
+  cloudflare_pages_project: "bt-proj-2606-soho-townhouse"
 narrative:
+  certification:
+    target: "EnerPHit by Component"
+    ph_ach_limit: "1.0"
   climate:
-    weather_station_name: TBD
-    state_name: TBD
-    ashrae_location_name: TBD
+    weather_station_name: "New_York_J_F_Kennedy_IntL_Ar :: 744860 :: TMY3"
+    weather_station_url: "https://energyplus-weather.s3.amazonaws.com/north_and_central_america_wmo_region_4/USA/NY/USA_NY_New.York-J.F.Kennedy.Intl.AP.744860_TMY3/USA_NY_New.York-J.F.Kennedy.Intl.AP.744860_TMY3.zip"
+    state_name: "New York"
+    state_name_abbreviation: "NY"
+    ashrae_location_name: "Zone 4(A)"
+    ashrae_winter_design_temp_F: "10.4"
+    ashrae_winter_design_temp_C: "-12.0"
+  energy_code:
+    name: "NYC Energy Code 2025"
+    zone: "Zone 4(A)"
+    ach_limit: "3.0"
+    code_base_url: https://up.codes/viewer/new_york_city/nyc-energy-conservation-code-2025
+    code_airtightness_url: https://up.codes/viewer/new_york_city/nyc-energy-conservation-code-2025/chapter/R4/residential-energy-efficiency#R402.5.1.3
+  co2:
+    epa_subgrid_name: "NY (NYCW)"
+    target_tons: "4"
+    taget_co2_per_person: 4.0
+  mechanical:
+    erv:
+      manufacturer_name: "Example Manufacturer"
+      type_name: "Example ERV"
+  windows:
+    comfort_target_r_value: "5.6"
+    comfort_target_u_value: "0.18"
+  user_defined: {}

@@ -1,9 +1,55 @@
 {
-  "status": "pending",
-  "project": {
-    "slug": "0000-example-report",
-    "name": "Example Passive House Report"
-  },
-  "schema_version": "0.1.0",
-  "variants": []
+  "schema_version": "1.0.0",
+  "phpp_version": "10.6",
+  "generated_at": "2026-05-23T04:01:29.644331Z",
+  "generator": "btwr@0.0.1",
+  "status": "ok",
+  "variants": [
+    {
+      "id": "code_minimum",
+      "name": "Code Minimum",
+      "order": 0,
+      "color": "auto",
+      "recommended": false,
+      "source_column": "G"
+    },
+    {
+      "id": "improved_envelope",
+      "name": "Improved Envelope",
+      "order": 1,
+      "color": "auto",
+      "recommended": false,
+      "source_column": "H"
+    },
+    {
+      "id": "improved_hvac",
+      "name": "Improved HVAC",
+      "order": 2,
+      "color": "auto",
+      "recommended": false,
+      "source_column": "I"
+    },
+    {
+      "id": "enerphit_by_component",
+      "name": "EnerPHit by Component",
+      "order": 3,
+      "color": "auto",
+      "recommended": false,
+      "source_column": "J"
+    },
+    {
+      "id": "enerphit_by_demand",
+      "name": "EnerPHit by Demand",
+      "order": 4,
+      "color": "auto",
+      "recommended": true,
+      "source_column": "K"
+    }
+  ],
+  "recommended_variant_id": "enerphit_by_demand",
+  "source_workbook": {
+    "path": "/Users/em/Dropbox/bldgtyp/2606 29 Vandam St/07_PHPP/2606-29-Vandam-St-260522.xlsx",
+    "sha256": "63674ead59be191288a8e617f2001e924bd14879d9636f392df16acd4726db76",
+    "size_bytes": 13010065
+  }
 }
